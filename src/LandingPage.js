@@ -28,7 +28,7 @@ export default function LandingPage(props) {
     <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}>
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <Hero />
+      <Hero titulo={props.titulo}/>
       <Box sx={{ bgcolor: 'background.default' }}>
         <LogoCollection />
         <Features />
