@@ -5,7 +5,7 @@ import LandingPage from './LandingPage';
 function App() {
   return (
     <div className="App">
-      <LandingPage theme="dark" title="Meu Painel de Controle" />
+      <LandingPage theme="dark" titulo="Github Branches" />
     </div>
   );
 }

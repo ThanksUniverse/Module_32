@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
-export default function Hero() {
+export default function Hero(props) {
   return (
     <Box
       id="hero"
@@ -32,6 +32,20 @@ export default function Hero() {
         }}
       >
         <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
+
+          <Typography
+            variant="h6"
+            sx={{
+              display: 'flex',
+              flexDirection: { xs: 'column', md: 'row' },
+              alignSelf: 'center',
+              textAlign: 'center',
+              fontSize: 'clamp(3.5rem, 10vw, 4rem)',
+            }}
+          >
+            {props.titulo}
+          </Typography>
+
           <Typography
             variant="h1"
             sx={{
